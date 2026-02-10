@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ricky's Premium Car Detailing - Portland, OR</title>
+  <meta name="description" content="Professional car detailing in Portland, Oregon. Ceramic coating, paint correction, interior deep clean & more. Book today!"/>
+  <style>
+    :root {
+      --primary: #0f172a;     /* deep navy/black */
+      --accent: #3b82f6;      /* bright blue for shine */
+      --accent-dark: #2563eb;
+      --light: #f8fafc;
+      --gray: #64748b;
+      --dark: #020617;
+    }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background: var(--light);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+    header {
+      background: var(--primary);
+      color: white;
+      padding: 1rem 5%;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+    .logo {
+      font-size: 1.6rem;
+      font-weight: bold;
+    }
+    .logo span { color: var(--accent); }
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    .nav-links a:hover { color: var(--accent); }
+    .btn {
+      background: var(--accent);
+      color: white;
+      padding: 0.7rem 1.5rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s;
+    }
+    .btn:hover {
+      background: var(--accent-dark);
+      transform: translateY(-2px);
+    }
+
+    /* Hero */
+    #hero {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=1600&q=80');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 12rem 5% 8rem;
+    }
+    #hero h1 {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+    }
+    #hero p {
+      font-size: 1.4rem;
+      max-width: 700px;
+      margin: 0 auto 2rem;
+    }
+
+    section {
+      padding: 6rem 5%;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+    h2 {
+      text-align: center;
+      font-size: 2.8rem;
+      margin-bottom: 3rem;
+      color: var(--primary);
+    }
+
+    /* Services grid */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+    }
+    .service-card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      transition: transform 0.3s;
+    }
+    .service-card:hover { transform: translateY(-10px); }
+    .service-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+    .service-card h3 {
+      padding: 1.5rem 1.5rem 0.5rem;
+      color: var(--primary);
+    }
+    .service-card p {
+      padding: 0 1.5rem 1.5rem;
+      color: var(--gray);
+    }
+
+    /* Gallery */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+    .gallery-grid img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    /* CTA */
+    #cta {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+    }
+    #cta h2 { color: white; }
+
+    footer {
+      background: var(--dark);
+      color: #94a3b8;
+      text-align: center;
+      padding: 3rem 5% 2rem;
+    }
+    footer a { color: var(--accent); text-decoration: none; }
+
+    @media (max-width: 768px) {
+      .nav-links { display: none; } /* add mobile menu later if needed */
+      #hero { padding: 8rem 5% 6rem; }
+      #hero h1 { font-size: 2.8rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">Ricky's <span>Detailing</span></div>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#cta" class="btn">Book Now</a>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <h1>Premium Car Detailing in Portland, OR</h1>
+    <p>Bring your ride back to showroom condition with professional detailing — ceramic coatings, paint correction, interior restoration & more.</p>
+    <a href="#cta" class="btn" style="font-size:1.2rem; padding:1rem 2.5rem;">Get Your Free Quote</a>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=800" alt="Full Detail">
+        <h3>Complete Detail Package</h3>
+        <p>Exterior wash, clay bar, polish, wax/sealant, full interior vacuum + steam clean, windows, tires & trim dressed.</p>
+      </div>
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800" alt="Ceramic Coating">
+        <h3>Ceramic Coating</h3>
+        <p>Professional-grade ceramic coatings (1–5 years protection) with hydrophobic properties and UV resistance.</p>
+      </div>
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1606857521015-7f9fcf423740?w=800" alt="Paint Correction">
+        <h3>Paint Correction</h3>
+        <p>Multi-stage polish to remove swirls, scratches & oxidation — bring back that deep, mirror-like shine.</p>
+      </div>
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1511919884226-feb5ae1f3331?w=800" alt="Interior Deep Clean">
+        <h3>Interior Deep Clean</h3>
+        <p>Leather/vinyl cleaning & conditioning, carpet shampoo, odor elimination, dashboard & console detail.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2>Before & After Gallery</h2>
+    <div class="gallery-grid">
+      <!-- Replace with your real before/after photos -->
+      <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=600" alt="Before After 1">
+      <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=600" alt="Before After 2">
+      <img src="https://images.unsplash.com/photo-1606857521015-7f9fcf423740?w=600" alt="Before After 3">
+      <img src="https://images.unsplash.com/photo-1511919884226-feb5ae1f3331?w=600" alt="Before After 4">
+    </div>
+  </section>
+
+  <section id="cta">
+    <h2>Ready to Make Your Car Shine?</h2>
+    <p style="font-size:1.3rem; max-width:700px; margin:0 auto 2rem;">Book your appointment today or get a custom quote. Serving Portland and surrounding areas.</p>
+    <p id="contact" style="margin:2rem 0;">
+      Call/Text: (503) 555-1234<br>
+      Email: info@rickysdetailing.com<br>
+      Location: Portland, Oregon
+    </p>
+    <a href="tel:+15035551234" class="btn" style="margin-right:1rem;">Call Now</a>
+    <a href="mailto:info@rickysdetailing.com" class="btn">Email Quote</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Ricky's Premium Car Detailing. All rights reserved.<br>
+      Proudly serving Portland, OR • <a href="#">Privacy Policy</a></p>
+  </footer>
+
+</body>
+</html>
