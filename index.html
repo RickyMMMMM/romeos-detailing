@@ -3,10 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Romeo's Premium Car Detailing - Salem, OR</title>
-  <meta name="description" content="Professional car detailing in Salem, Oregon. Interior deep clean & ceramic coatings. Book today!"/>
   
+  <title>Romeo's Premium Car Detailing - Salem, OR</title>
+
+  <meta name="description"
+        content="Professional car detailing in Salem, Oregon. Interior deep clean, ceramic coatings, paint correction and more."/>
+
   <style>
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     :root {
       --primary: #0f172a;
       --accent: #3b82f6;
@@ -89,11 +97,12 @@
       transform: translateY(-2px);
     }
 
-    /* Hero */
+    /* HERO */
+
     #hero {
       background:
         linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)),
-        url('https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=1600&q=80');
+        url('mycar.jpg');
 
       background-size: cover;
       background-position: center;
@@ -126,7 +135,8 @@
       color: var(--primary);
     }
 
-    /* Services */
+    /* SERVICES */
+
     .services-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -161,7 +171,8 @@
       color: var(--gray);
     }
 
-    /* Gallery */
+    /* GALLERY */
+
     .gallery-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -174,7 +185,8 @@
       box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     }
 
-    /* CTA */
+    /* BOOKING SECTION */
+
     #cta {
       background: var(--primary);
       color: white;
@@ -183,6 +195,15 @@
 
     #cta h2 {
       color: white;
+    }
+
+    .calendar-container {
+      background: white;
+      padding: 1rem;
+      border-radius: 12px;
+      max-width: 1000px;
+      margin: 0 auto;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
     }
 
     footer {
@@ -208,9 +229,15 @@
       }
 
       #hero h1 {
-        font-size: 2.8rem;
+        font-size: 2.5rem;
       }
+
+      h2 {
+        font-size: 2rem;
+      }
+
     }
+
   </style>
 </head>
 
@@ -218,123 +245,171 @@
 
   <header>
     <nav>
-      <div class="logo">Romeo's <span>Detailing</span></div>
+
+      <div class="logo">
+        Romeo's <span>Detailing</span>
+      </div>
 
       <ul class="nav-links">
         <li><a href="#services">Services</a></li>
         <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#cta">Book Now</a></li>
       </ul>
 
-      <a href="https://calendar.app.google/2uayJpRKoY1MEeLn8"
-         class="btn"
-         target="_blank">
-         Book Now
+      <a href="#cta" class="btn">
+        Book Now
       </a>
+
     </nav>
   </header>
 
+  <!-- HERO -->
+
   <section id="hero">
-    <h1>Premium Car Detailing in Salem, OR</h1>
+
+    <h1>
+      Premium Car Detailing in Salem, OR
+    </h1>
 
     <p>
-      Bring your ride back to showroom condition with professional detailing —
-      ceramic coatings, paint correction, interior restoration & more.
+      Bring your ride back to showroom condition with professional detailing,
+      paint correction, interior restoration & more.
     </p>
 
-    <a href="https://calendar.app.google/2uayJpRKoY1MEeLn8"
+    <a href="#cta"
        class="btn"
-       target="_blank"
        style="font-size:1.2rem; padding:1rem 2.5rem;">
-       Book Now
+       Book Appointment
     </a>
+
   </section>
 
+  <!-- SERVICES -->
+
   <section id="services">
+
     <h2>Our Services</h2>
 
     <div class="services-grid">
 
       <div class="service-card">
-        <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=800" alt="Full Detail">
+        <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=800"
+             alt="Full Detail">
 
         <h3>Complete Detail Package</h3>
 
         <p>
-          Exterior wash, clay bar, polish, wax/sealant,
+          Exterior wash, polish, wax/sealant,
           full interior vacuum + steam clean,
           windows, tires & trim dressed.
         </p>
       </div>
 
       <div class="service-card">
-        <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800" alt="Ceramic Coating">
+        <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800"
+             alt="Ceramic Coating">
 
         <h3>Ceramic Coating</h3>
 
         <p>
-          Professional-grade ceramic coatings with hydrophobic properties
-          and UV resistance.
+          Professional-grade ceramic coatings
+          with hydrophobic properties and UV protection.
         </p>
       </div>
 
       <div class="service-card">
-        <img src="https://images.unsplash.com/photo-1606857521015-7f9fcf423740?w=800" alt="Paint Correction">
+        <img src="https://images.unsplash.com/photo-1606857521015-7f9fcf423740?w=800"
+             alt="Paint Correction">
 
         <h3>Paint Correction</h3>
 
         <p>
-          Multi-stage polish to remove swirls,
-          scratches & oxidation for a mirror-like shine.
+          Remove swirls, scratches and oxidation
+          for a deep mirror-like shine.
         </p>
       </div>
 
       <div class="service-card">
-        <img src="https://images.unsplash.com/photo-1511919884226-feb5ae1f3331?w=800" alt="Interior Deep Clean">
+        <img src="https://images.unsplash.com/photo-1511919884226-feb5ae1f3331?w=800"
+             alt="Interior Deep Clean">
 
         <h3>Interior Deep Clean</h3>
 
         <p>
-          Leather/vinyl cleaning, carpet shampoo,
-          odor elimination, dashboard & console detailing.
+          Leather cleaning, carpet shampoo,
+          odor removal and full interior restoration.
         </p>
       </div>
 
     </div>
+
   </section>
 
+  <!-- GALLERY -->
+
   <section id="gallery">
+
     <h2>Before & After Gallery</h2>
 
     <div class="gallery-grid">
-      <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=600" alt="Gallery Image">
-      <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=600" alt="Gallery Image">
-      <img src="https://images.unsplash.com/photo-1606857521015-7f9fcf423740?w=600" alt="Gallery Image">
-      <img src="https://images.unsplash.com/photo-1511919884226-feb5ae1f3331?w=600" alt="Gallery Image">
+
+      <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=600"
+           alt="Gallery">
+
+      <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=600"
+           alt="Gallery">
+
+      <img src="https://images.unsplash.com/photo-1606857521015-7f9fcf423740?w=600"
+           alt="Gallery">
+
+      <img src="https://images.unsplash.com/photo-1511919884226-feb5ae1f3331?w=600"
+           alt="Gallery">
+
     </div>
+
   </section>
+
+  <!-- BOOKING SECTION -->
 
   <section id="cta">
 
-    <h2>Ready to Make Your Car Shine?</h2>
+    <h2>Book Your Appointment</h2>
 
-    <p style="font-size:1.3rem; max-width:700px; margin:0 auto 2rem;">
-      Book your appointment today or get a custom quote.
-      Serving Salem and surrounding areas.
+    <p style="
+      font-size:1.3rem;
+      max-width:700px;
+      margin:0 auto 2rem;
+    ">
+      Schedule your detailing appointment directly below.
     </p>
 
-    <p id="contact" style="margin:2rem 0;">
-      Call/Text: (971) 209-6052<br>
-      Email: raluxurydetailing@gmail.com<br>
+    <div class="calendar-container">
+
+      <!-- Google Calendar Appointment Scheduling begin -->
+
+      <iframe
+        src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ32TfAGgq_nC2q_I4Uj7LNPFBBKa_92ckIlMd_cw5D3bH0hPtHz_-Vj9JeQqdebuYNFKfgL6tlR?gv=true"
+        style="border:0"
+        width="100%"
+        height="700"
+        frameborder="0">
+      </iframe>
+
+      <!-- end Google Calendar Appointment Scheduling -->
+
+    </div>
+
+    <p id="contact" style="margin:3rem 0 1rem;">
+
+      Call/Text: (971) 209-6052
+      <br>
+
+      Email: raluxurydetailing@gmail.com
+      <br>
+
       Location: Salem, Oregon
-    </p>
 
-    <a href="https://calendar.app.google/2uayJpRKoY1MEeLn8"
-       class="btn"
-       target="_blank"
-       style="margin-right:1rem;">
-       Book Now
-    </a>
+    </p>
 
     <a href="tel:+19712096052" class="btn">
       Call Now
@@ -342,13 +417,16 @@
 
   </section>
 
+  <!-- FOOTER -->
+
   <footer>
+
     <p>
-      &copy; 2026 Romeo's Premium Car Detailing.
-      All rights reserved.
+      &copy; 2026 Romeo's Premium Car Detailing
       <br>
       Proudly serving Salem, OR
     </p>
+
   </footer>
 
 </body>
